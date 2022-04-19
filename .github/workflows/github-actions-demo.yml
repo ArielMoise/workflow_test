@@ -22,5 +22,5 @@ jobs:
       
       - name: Execute Test Script
         run: |
-          echo "Store: Hello World"
-          INPUT_STORE=Hello World python3 main.py
+          echo "Store: ${hello world}"
+          INPUT_STORE=${hello world} python3 main.py
