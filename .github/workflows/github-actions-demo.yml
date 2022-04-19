@@ -24,4 +24,4 @@ jobs:
   - name: Execute Test Script
     run: |
       echo "Store: ${{ github.event.inputs.myInput }}"
-      INPUT_STORE=${{ github.event.inputs.myInput }} python3 test.py
+      INPUT_STORE=${{ github.event.inputs.myInput }} python3 main.py
