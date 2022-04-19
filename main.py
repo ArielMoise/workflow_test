@@ -8,4 +8,5 @@ def main():
 
 
 main()
+print("input_variable")
 print(input_variable)
