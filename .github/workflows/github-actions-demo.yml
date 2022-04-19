@@ -1,6 +1,7 @@
 name: Test Python Input
 
-on:
+on: 
+  [push]
    workflow_dispatch:
      inputs:
        myInput:
