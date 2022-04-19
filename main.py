@@ -1,6 +1,6 @@
 import os
 
-input_variable = os.environ['INPUT_STORE']
+input_variable = os.environ['INPUT']
 
 def main():
     with open('readme.txt', 'w') as f:

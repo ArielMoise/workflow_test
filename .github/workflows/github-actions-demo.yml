@@ -1,13 +1,6 @@
 name: Test Python Input
 
-on:
-   push:
-     inputs:
-       myInput:
-         description: 'User Input:'
-         required: true
-         default: "Hello World"
-
+on: [push]
 
 jobs:
   run-python-test:
@@ -23,5 +16,6 @@ jobs:
       
       - name: Execute Test Script
         run: |
-          echo "Store: ${{ github.event.inputs.myInput }}"
-          INPUT_STORE=${{ github.event.inputs.myInput }} python3 main.py
+          python3 main.py
+        env:
+          INPUT: "hello world"
