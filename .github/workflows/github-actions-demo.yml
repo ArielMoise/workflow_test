@@ -1,7 +1,7 @@
 name: Test Python Input
 
 on:
-   workflow_dispatch:
+   push:
      inputs:
        myInput:
          description: 'User Input:'
