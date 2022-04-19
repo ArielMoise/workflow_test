@@ -1,10 +1,10 @@
-#main
+import os
+
+input_variable = os.environ['INPUT_STORE']
 
 def main():
-    user_input = input('write some random test: ')
-
     with open('readme.txt', 'w') as f:
-        f.write(user_input)
+        f.write(input_variable)
 
 
 main()
