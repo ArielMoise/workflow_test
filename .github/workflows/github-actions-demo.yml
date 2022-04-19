@@ -1,11 +1,12 @@
 name: Test Python Input
 
 on: [push]
-    inputs:
-      myInput:
-        description: 'User Input:'
-        required: true
-        default: "Hello World"
+    workflow_dispatch:
+      inputs:
+        myInput:
+          description: 'User Input:'
+          required: true
+          default: "Hello World"
 
 jobs:
   run-python-test:
